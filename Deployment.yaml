@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dotnetworld
-        image: docker-registry.p-vgbmn-pipeline/dotnetworld:${CICD_EXECUTION_SEQUENCE}
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
         - containerPort: 80
 ---
