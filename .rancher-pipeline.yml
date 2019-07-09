@@ -5,6 +5,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: dotnetworld:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: 127.0.0.1:34551
 - name: Deploy
   steps:
   - applyYamlConfig:
